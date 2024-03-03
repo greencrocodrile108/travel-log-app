@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Button from '../buttons/Button';
 
 const LoginForm = () => {
@@ -10,10 +11,14 @@ const LoginForm = () => {
         </div>
         <div className="flex">
           <div>
-            <Button content="Log in" />
+            <Link to="/log-in">
+              <Button content="Log in" />
+            </Link>
           </div>
           <div className="ml-4">
-            <Button content="Sign up" />
+            <Link to="/sign-up">
+              <Button content="Sign up" />
+            </Link>
           </div>
         </div>
       </div>
